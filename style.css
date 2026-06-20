@@ -618,3 +618,47 @@ button:hover,
     font-size: 20px;
     padding: 10px;
 }
+
+/* ===========================
+   HALAMAN SURAT PANJANG
+=========================== */
+
+#surat {
+    width: 95%;
+    max-width: 850px;
+}
+
+/* Saat surat dibuka */
+#surat.aktif {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+
+    margin: 40px auto 80px auto;
+
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Tombol kembali selalu terlihat */
+#surat .kembali {
+    position: sticky;
+    top: 15px;
+    z-index: 100;
+
+    background: #ff5c8a;
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(255, 92, 138, 0.5);
+}
+
+/* Isi surat lebih nyaman dibaca */
+#teks-surat {
+    white-space: pre-line;
+    line-height: 2;
+    font-size: 22px;
+    color: #5a3342;
+    padding: 10px 20px;
+    text-align: center;
+}
