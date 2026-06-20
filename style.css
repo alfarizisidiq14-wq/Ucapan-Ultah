@@ -581,3 +581,40 @@ button:hover,
         opacity: 0;
     }
 }
+
+/* Halaman pesan panjang */
+#pesan {
+    width: 95%;
+    max-width: 800px;
+}
+
+/* Saat halaman pesan aktif */
+#pesan.aktif {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+
+    margin: 30px auto 80px auto;
+
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Tombol kembali tetap terlihat */
+#pesan .kembali {
+    position: sticky;
+    top: 15px;
+    z-index: 100;
+
+    background: #ff5c8a;
+    color: white;
+}
+
+/* Isi pesan lebih nyaman dibaca */
+#teks-pesan {
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    padding: 10px;
+}
