@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Spesial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background Animasi Love & Birthday -->
+<div class="background-love"></div>
+
+
+<!-- Halaman Opening -->
+<div class="opening" id="opening">
+
+    <h1>
+        For Isti Utami Endang Adiningsih ❤️
+    </h1>
+
+    <p>
+        Aku Punya Ini Sayanggg, Buka!...
+    </p>
+
+    <button onclick="bukaMenu()">
+        Buka Surat 💌
+    </button>
+
+</div>
+
+
+<!-- Menu Kenangan -->
+<div class="menu" id="menu">
+
+    <h2>Ayo Pilih Mau Yang Mana</h2>
+    <p>
+        Play Dulu Musiknya...
+    </p>
+
+
+    <div class="menu-box">
+
+        <div class="card" onclick="bukaHalaman('surat')">
+            <h3>💌 Surat</h3>
+            <p>Hal yang ingin aku sampaikan</p>
+        </div>
+
+        <div class="card" onclick="bukaHalaman('foto')">
+            <h3>📸 Foto</h3>
+            <p>Moment Singkatnya</p>
+        </div>
+
+        <div class="card" onclick="bukaHalaman('musik')">
+            <h3>🎵 Musik</h3>
+            <p>Lagu Spesial Ini</p>
+        </div>
+
+        <div class="card" onclick="bukaHalaman('pesan')">
+            <h3>❤️ Pesan</h3>
+            <p>Ucapan Dari Pacarmu</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Halaman Surat -->
+<div class="halaman" id="surat">
+
+    <button class="kembali" onclick="kembaliMenu()">⬅ Kembali</button>
+
+    <h2>💌 Kata - Kata Hari Ini Bu Isti</h2>
+
+    <p id="teks-surat"></p>
+
+</div>
+
+
+<!-- Halaman Foto -->
+<div class="halaman" id="foto">
+
+    <button class="kembali" onclick="kembaliMenu()">
+        ⬅ Kembali
+    </button>
+
+    <h2>Berbagai Kepribadian</h2>
+
+    <div class="gallery">
+
+        <div class="polaroid">
+            <img src="foto9.jpeg" alt="Kenangan 1">
+            <p>Day One Confess</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="foto8.jpeg" alt="Kenangan 2">
+            <p>Working Mode</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="foto6.jpeg" alt="Kenangan 3">
+            <p>Badmood Mode</p>
+        </div>
+
+        <div class="polaroid">
+            <img src="foto7.jpeg" alt="Kenangan 4">
+            <p>Meeting Mode</p>
+            
+        </div>
+
+         <div class="polaroid">
+            <img src="foto5.jpeg" alt="Kenangan 4">
+            <p>Eating Mode</p>
+            
+        </div>
+
+     <div class="polaroid">
+            <img src="foto4.jpeg" alt="Kenangan 4">
+            <p>Lecture Mode</p>
+            
+        </div>
+
+        <div class="polaroid">
+            <img src="foto3.jpeg" alt="Kenangan 4">
+            <p>Don't Ever Give Up</p>
+            
+        </div>
+
+<div class="polaroid">
+            <img src="foto10.jpeg" alt="Kenangan 4">
+            <p>Laperrr Anjayy</p>
+            
+        </div>
+    </div>
+
+</div>
+
+<!-- Halaman Musik -->
+<!-- Halaman Musik -->
+<div class="halaman" id="musik">
+
+    <button class="kembali" onclick="kembaliMenu()">
+        ← Kembali
+    </button>
+
+    <h2>Dengerin Saja Buu</h2>
+
+    <div class="cover">
+        <img src="foto11.jpeg" alt="Cover Lagu">
+    </div>
+
+    <h3>Satu Hari di Bulan Juni</h3>
+
+    <p>TULUS ❤️</p>
+
+
+    <button id="btnMusic" onclick="toggleMusic()">
+        ▶ Putar Lagu
+    </button>
+
+
+    <audio id="lagu">
+        <source 
+        src="TULUS - Satu Hari di Bulan Juni (Official Audio).mp3" 
+        type="audio/mpeg">
+    </audio>
+
+</div>
+
+<!-- Halaman Pesan -->
+<div class="halaman" id="pesan">
+
+    <button class="kembali" onclick="kembaliMenu()">
+        ⬅ Kembali
+    </button>
+
+    <h2>❤️ Dengerin, Cintanya Aku❤️</h2>
+
+    <p id="teks-pesan"></p>
+
+    <h3 class="ttd">
+        Love U Sayang, HBD Yahh ❤️
+    </h3>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
